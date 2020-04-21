@@ -1,5 +1,5 @@
 {% set name = "rainflow" %}
-{% set version = "2.2.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9237ae1dd8e588becf4a99687bfd5fc10f98a61d412e0e1000a4d0e0fa0f1838
+  sha256: c6662ba9555d6421d14fcdf71107555d22a87486a54354f65e0368ae12a28022
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,7 +30,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Implementation of ASTM E1049-85 rainflow cycle counting algorithm'
+  summary: Implementation of ASTM E1049-85 rainflow cycle counting algorithm
 
   description: |
     rainflow is a Python implementation of the ASTM E1049-85 rainflow cycle counting algorithm for 
