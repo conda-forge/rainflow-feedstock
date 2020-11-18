@@ -5,9 +5,13 @@ Home: https://github.com/iamlikeme/rainflow
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rainflow-feedstock/blob/master/LICENSE.txt)
 
 Summary: Implementation of ASTM E1049-85 rainflow cycle counting algorithm
+
+Development: https://github.com/iamlikeme/rainflow/
+
+Documentation: https://github.com/iamlikeme/rainflow/
 
 rainflow is a Python implementation of the ASTM E1049-85 rainflow cycle counting algorithm for
 fatigue analysis. No dependencies beside Python's standard library. Supports both Python 2 and 3.
