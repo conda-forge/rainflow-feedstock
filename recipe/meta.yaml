@@ -1,13 +1,13 @@
 {% set name = "rainflow" %}
-{% set version = "3.0.1" %}
+{% set version = "3.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 26b24f66dd8591dfd88566000a9b80a64a967e2ffa2825261b2b7db37aacd2da
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: de0622ce612c387c41f5efa6128ec007673787b1146e10d8632dbeee4b15ba33
 
 build:
   noarch: python
